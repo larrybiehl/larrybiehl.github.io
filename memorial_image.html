@@ -1,0 +1,63 @@
+<HTML>
+<!--This file created for Memorial File Set-->
+<HEAD>
+   <TITLE>Picture</TITLE>
+<SCRIPT LANGUAGE="JavaScript" SRC="memorial_common.js"><!--  Hide this from JavaScript-challenged browsers
+document.write("memorial_common.js file not found"); //  End of hiding comment --></SCRIPT><SCRIPT LANGUAGE="JavaScript"><!--  Hide this from JavaScript-challenged browsers
+
+/* This function starts the time again if needed.  */
+function FinishLoad()
+{  
+	//console.log ("in memorial_image.html");
+	
+	if (parent.parent.Interval != 999)
+		parent.parent.TopFrame.Ctrlbtn.RestartSlideShow();
+		
+	window.top.ImageNumber = -1;
+	
+	var index = window.top.CurrentSlide;
+   var reloadFlag = true;
+	
+   if (window.top.slideVector[index].width2 == 0 ||
+   				window.top.slideVector[index].caption == "")
+   	{
+ 		}	// end "if (window.top.slideVector[index].width2 == 0 || ...)"
+		
+	else
+		{
+		//console.log (window.top.slideVector[index].caption);
+		//console.log (window.top.slideVector[index].listTitle);
+		//console.log (window.top.slideVector[index].date_time);
+		//console.log ("width1: " + window.top.slideVector[index].width1);
+		//console.log ("height1: " + window.top.slideVector[index].height1);
+		//console.log ("ImageWidth: " + window.top.ImageWidth);
+		//console.log ("ImageHeight: " + window.top.ImageHeight);
+		
+		}
+	
+}	// end "FinishLoad"
+
+
+
+// This function captures the left and right arrow key events
+onkeydown = function(evt) 
+{
+console.log('onkeydown2');
+HandleKeyDownEvent(evt);
+};
+
+
+//  End of hiding comment --></SCRIPT>
+</HEAD>
+<BODY>
+<P><SCRIPT LANGUAGE=JavaScript>
+document.write('<center><iframe src="' + parent.parent.ImageName + '" width=' + parent.parent.ImageWidth + ' height=' + parent.parent.ImageHeight + ' BORDER=2 id=imageFile ALIGN=bottom onload="FinishLoad();"></iframe>');
+//document.write('<center><iframe src="' + parent.parent.ImageName + '" BORDER=2 id=imageFile ALIGN=bottom onload="FinishLoad();"></iframe>');
+
+if (parent.parent.Sizecode != 5)
+	{
+	document.write('<P>' + parent.parent.Caption + '</P></center>' + parent.parent.Date_time + ' (' + parent.parent.ID + ')');
+	}
+</SCRIPT></P>
+</BODY>
+</HTML>

@@ -1,0 +1,40 @@
+<HTML>
+<!--This file created 5/18/00 10:34 PM by Claris Home Page version 3.0-->
+<HEAD>
+   <TITLE>List</TITLE>
+</HEAD>
+<BODY>
+<P><SCRIPT LANGUAGE=JavaScript>
+	if (window.top.LastSlide >= 0)
+		{
+		for (index=0; index<=window.top.LastSlide; index++)
+			{
+			//console.log ("index: " + index); 
+			if (window.top.slideVector[index].listBreak != '')
+				document.write('<p>' + window.top.slideVector[index].listBreak + '</p>');
+		
+			document.write('<p><a href="JavaScript:window.top.ItemClicked(' + index + ')">' + window.top.slideVector[index].listTitle + '</a></p>');
+
+			}	// end "for (index=0; index<window.top.LastSlide; index++)"
+			
+		}
+
+// This function captures the left and right arrow key events
+document.onkeydown = function(evt) 
+{
+	/*console.log('onkeydown5');*/
+   evt = evt || window.event;
+   switch (evt.keyCode) 
+    	{
+        case 37:
+            parent.parent.leftArrowPressed();
+            break;
+            
+        case 39:
+            parent.parent.rightArrowPressed();
+            break;
+    	}
+};
+</SCRIPT></P>
+</BODY>
+</HTML>

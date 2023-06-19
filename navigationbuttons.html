@@ -1,0 +1,111 @@
+<HTML>
+<HEAD>
+   <TITLE>Navigation</TITLE>
+<SCRIPT LANGUAGE="JavaScript"><!--  Hide this from JavaScript-challenged browsers
+
+
+
+function MouseDown(gifNumber)
+{
+	doDownGifFlag = 0;
+	switch (gifNumber)
+		{
+		case 0:
+			if (top.FirstSlide != top.CurrentSlide)
+				doDownGifFlag = 1;
+			break;
+			
+		case 1:
+			if (top.PreviousSlide != top.CurrentSlide)
+				doDownGifFlag = 1;
+			break;
+			
+		case 2:
+			if (top.NextSlide != top.CurrentSlide)
+				doDownGifFlag = 1;
+			break;
+			
+		case 35:
+			if (top.LastSlide != top.CurrentSlide)
+				doDownGifFlag = 1;
+			break;
+		
+		}		// end "switch (gifNumber)"
+	
+	if (doDownGifFlag == 1)
+		document.images[gifNumber].src=top.ButtonDownGifs[gifNumber].src;
+		
+	return true;
+	
+}		// end "MouseDown"
+
+
+
+function MouseOver(imageNumber)
+{
+	switch (imageNumber)
+		{
+		case 0:
+			if (top.FirstSlide == top.CurrentSlide)
+				window.status="This is the first picture; button will not activate."; 
+			
+			else		// top.FirstSlide != top.CurrentSlide
+				window.status="Click on this button to go to the first picture."; 
+			break;
+			
+		case 1:
+			if (top.PreviousSlide == top.CurrentSlide)
+				top.status="This is first picture; button will not activate."; 
+			
+			else		// top.PreviousSlide != top.CurrentSlide
+				top.status="Click on this button to go to the previous picture."; 
+			break;
+			
+		case 2:
+			if (top.NextSlide == top.CurrentSlide)
+				top.status="This is the last picture; button will not activate."; 
+			
+			else		// top.NextSlide != top.CurrentSlide
+				top.status="Click on this button to go to the next picture.";
+			break;
+			
+		case 3:
+			if (top.LastSlide == top.CurrentSlide)
+				top.status="This is the last picture; button will not activate."; 
+			
+			else		// top.LastSlide != top.CurrentSlide
+				top.status="Click on this button to go to the last picture."; 
+			break;
+		
+		}		// end "switch (imageNumber)"
+		
+	return true;
+	
+}		// end "MouseOver"
+
+
+
+function ClickNext(slide, imageNumber)
+{
+	top.ImageNumber = imageNumber;
+	returnFlag = top.ItemClicked(slide);
+	
+	document.images[imageNumber].src=top.ButtonGifs[imageNumber].src;
+	
+}		// end "ClickNext"
+
+
+
+//  End of hiding comment --></SCRIPT>
+</HEAD>
+<BODY>
+<CENTER>
+<!--<A HREF="JavaScript:top.GoHome();" onMouseOver="top.MouseOver(0);" onMouseDown="MouseDown(0);"><IMG SRC="home.gif" ALT="Home Page" WIDTH=32 HEIGHT=32 BORDER=0 ALIGN=bottom></A>
+<IMG SRC="space.gif" WIDTH=4 HEIGHT=32 BORDER=0 ALIGN=bottom>-->
+<A HREF="JavaScript:ClickNext(top.FirstSlide, 0);" onMouseOver="MouseOver(0); return true;" onMouseDown="MouseDown(0);"><IMG SRC="first.gif" ALT="First" WIDTH=32 HEIGHT=32 BORDER=0 ALIGN=bottom></A>
+<A HREF="JavaScript:ClickNext(top.PreviousSlide, 1);" onMouseOver="MouseOver(1); return true;" onMouseDown="MouseDown(1);"><IMG SRC="prev.gif" ALT="Previous" WIDTH=32 HEIGHT=32 BORDER=0 ALIGN=bottom></A>
+<A HREF="JavaScript:ClickNext(top.NextSlide, 2);" onMouseOver="MouseOver(2); return true;" onMouseDown="MouseDown(2);"><IMG SRC="next.gif" ALT="Next" WIDTH=32 HEIGHT=32 BORDER=0 ALIGN=bottom></A>
+<A HREF="JavaScript:ClickNext(top.LastSlide, 3);" onMouseOver="MouseOver(3); return true;" onMouseDown="MouseDown(3);"><IMG SRC="last.gif" ALT="Last" WIDTH=32 HEIGHT=32 BORDER=0 ALIGN=bottom></A>
+</CENTER>
+</BODY>
+</HTML>

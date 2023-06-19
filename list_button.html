@@ -1,0 +1,77 @@
+<HTML>
+<!--This file created 5/30/00 8:50 AM by Claris Home Page version 3.0-->
+<HEAD>
+   <TITLE>Title</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1"><SCRIPT LANGUAGE="JavaScript"><!--  Hide this from JavaScript-challenged browsers
+
+function ChangeList()
+{
+	parent.Ctrlbtn.StopTimer();
+	
+	listSelection = document.form1.list.selectedIndex;
+	parent.parent.ListCode = listSelection;
+		
+	if (parent.parent.Sizecode == 4 || parent.parent.Sizecode == 5)
+		{
+		parent.parent.SetImageVariables(parent.parent.CurrentSlide);
+		
+		}		// end "if (parent.parent.Sizecode == 4 || ..."
+	
+	if (listSelection == 0)
+		parent.parent.LowerFrame.location.href = "nolist_frame.html";
+	 
+	else		// listSelection != 0
+		parent.parent.LowerFrame.location.href = "list_frame.html";
+		
+	parent.Ctrlbtn.RestartSlideShow();
+
+}		// end "ChangeList"
+
+
+
+/* This function sets up the list setting  */
+function FinishLoad()
+{       
+	if (document.form1.list.selectedIndex != parent.parent.ListCode)
+		ChangeList();
+
+}		// end "FinishLoad"
+
+
+// This function captures the left and right arrow key events
+document.onkeydown = function(evt) 
+{
+	/*console.log('onkeydown3');*/
+   evt = evt || window.event;
+   switch (evt.keyCode) 
+    	{
+        case 37:
+            parent.parent.leftArrowPressed();
+            break;
+            
+        case 38:
+            parent.parent.upArrowPressed();
+            break;
+            
+        case 39:
+            parent.parent.rightArrowPressed();
+            break;
+            
+        case 40:
+            parent.parent.downArrowPressed();
+            break;
+    	}
+};
+
+
+
+//  End of hiding comment --></SCRIPT></HEAD>
+<BODY>
+<CENTER><FORM ACTION="" METHOD=POST name=form1>
+   <P><SELECT NAME=list onChange="ChangeList();">
+      <OPTION VALUE=1>No List
+      <OPTION VALUE=2 SELECTED>List
+   </SELECT>
+</FORM></CENTER>
+</BODY>
+</HTML>

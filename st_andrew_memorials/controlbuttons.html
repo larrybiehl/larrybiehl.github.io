@@ -85,8 +85,6 @@ function FinishLoad()
 {  
 	document.form1.show.selectedIndex = 0;
 	parent.parent.Interval = 999;
-	
-	//document.form1.imageSize.selectedIndex = parent.parent.Sizecode - 1;
 
 }		// end "FinishLoad"
 
@@ -104,7 +102,7 @@ function RestartSlideShow()
 }		// end "RestartSlideShow"
 
 
-
+/*
 function SetSize()
 {
 //	ind = document.form1.imageSize.selectedIndex;
@@ -119,12 +117,12 @@ function SetSize()
 	RestartSlideShow();
 
 }
-
+*/
 
 // This function captures the left and right arrow key events
 document.onkeydown = function(evt) 
 {
-/*console.log('onkeydown4');*/
+	console.log('onkeydown in controlbuttons')
    evt = evt || window.event;
    switch (evt.keyCode) 
     	{

@@ -43,6 +43,7 @@ function MouseDown(gifNumber)
 
 function MouseOver(imageNumber)
 {
+		console.log ("MouseOver: imageNumber = " + imageNumber);
 	switch (imageNumber)
 		{
 		case 0:
@@ -83,6 +84,30 @@ function MouseOver(imageNumber)
 	
 }		// end "MouseOver"
 
+// This function captures the left and right arrow key events
+document.onkeydown = function(evt) 
+{
+	console.log('onkeydown in navigationbuttons')
+   evt = evt || window.event;
+   switch (evt.keyCode) 
+    	{
+        case 37:
+            parent.parent.leftArrowPressed();
+            break;
+            
+        case 38:
+            parent.parent.upArrowPressed();
+            break;
+            
+        case 39:
+            parent.parent.rightArrowPressed();
+            break;
+            
+        case 40:
+            parent.parent.downArrowPressed();
+            break;
+    	}
+};
 
 
 function ClickNext(slide, imageNumber)

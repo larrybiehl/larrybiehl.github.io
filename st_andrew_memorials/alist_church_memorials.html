@@ -2,7 +2,9 @@
 <HEAD>
    <TITLE>St. Andrew Memorials</TITLE>
 <SCRIPT LANGUAGE="JavaScript" SRC="memorial_common.js"><!--  Hide this from JavaScript-challenged browsers
-document.write("memorial_common.js file not found"); //  End of hiding comment --></SCRIPT><SCRIPT LANGUAGE="JavaScript"><!--  Hide this from JavaScript-challenged browsers
+document.write("memorial_common.js file not found"); //  End of hiding comment -->
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript"><!--  Hide this from JavaScript-challenged browsers
 
 		// slideVector needs to be at least as large as the number of pictures to be in the set.
 		
@@ -29,7 +31,6 @@ index++
 slideVector[index] = new Picture3(index, "0BurchbyG_and_Louise_page_for_book", "Memorial_Files/");
 slideVector[index].date_time = "2012";
 slideVector[index].caption = "";
-slideVector[index].listBreak = "B";
 slideVector[index].listTitle = "Glen & Louise Burchby";
 
 index++
@@ -128,7 +129,7 @@ LastSlide = index;
 SetImageVariables(FirstSlide);
 
 
-
+/*
 function MouseOver()
 {
 	top.status="Click on this button to go to Memorial's home page.";
@@ -136,15 +137,67 @@ function MouseOver()
 	return true;
 	
 }		// end "MouseOver"
+*/
+// This function captures the arrow key events
+document.onkeydown = function(evt) 
+{
+	console.log('onkeydown in alist_church_memorials1')
+   evt = evt || window.event;
+   switch (evt.keyCode) 
+    	{
+        case 37:
+            parent.parent.leftArrowPressed();
+            break;
+            
+        case 38:
+            parent.parent.upArrowPressed();
+            break;
+            
+        case 39:
+            parent.parent.rightArrowPressed();
+            break;
+            
+        case 40:
+            parent.parent.downArrowPressed();
+            break;
+    	}
+};
+
+// This function captures the arrow key events
+function HandleKeyDownEvent(evt) 
+{
+	console.log('onkeydown in alist_church_memorials2');
+   evt = evt || window.event;
+   switch (evt.keyCode) 
+    	{
+        case 37:
+            leftArrowPressed();
+            break;
+            
+        case 38:
+            upArrowPressed();
+            break;
+            
+        case 39:
+            rightArrowPressed();
+            break;
+            
+        case 40:
+            downArrowPressed();
+            break;
+    	}
+};
 
 //  End of hiding comment --></SCRIPT>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><style type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<style type="text/css">
 <!--
 body {
 	background-color: #CCC;
 }
 -->
-</style></HEAD>
+</style>
+</HEAD>
 <FRAMESET ROWS="45,1*" BORDER=0 FRAMEBORDER=1 onresize="HandleResizeWindow();" onLoad="FinishLoad();">
 <NOFRAMES><BODY>
 <P><!--  The text to be displayed when the browser does not support frames -->

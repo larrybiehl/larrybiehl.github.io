@@ -11,11 +11,7 @@ function ChangeList()
 	listSelection = document.form1.list.selectedIndex;
 	parent.parent.ListCode = listSelection;
 		
-	if (parent.parent.Sizecode == 4 || parent.parent.Sizecode == 5)
-		{
-		parent.parent.SetImageVariables(parent.parent.CurrentSlide);
-		
-		}		// end "if (parent.parent.Sizecode == 4 || ..."
+	parent.parent.SetImageVariables(parent.parent.CurrentSlide);
 	
 	if (listSelection == 0)
 		parent.parent.LowerFrame.location.href = "nolist_frame.html";
@@ -41,7 +37,7 @@ function FinishLoad()
 // This function captures the left and right arrow key events
 document.onkeydown = function(evt) 
 {
-	/*console.log('onkeydown3');*/
+	console.log('onkeydown in list_button');
    evt = evt || window.event;
    switch (evt.keyCode) 
     	{
@@ -65,7 +61,8 @@ document.onkeydown = function(evt)
 
 
 
-//  End of hiding comment --></SCRIPT></HEAD>
+//  End of hiding comment --></SCRIPT>
+</HEAD>
 <BODY>
 <CENTER><FORM ACTION="" METHOD=POST name=form1>
    <P><SELECT NAME=list onChange="ChangeList();">

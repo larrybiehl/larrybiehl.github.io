@@ -37,15 +37,66 @@ function FinishLoad()
 	
 }	// end "FinishLoad"
 
+// This function captures the arrow key events
+document.onkeydown = function(evt) 
+{
+	console.log('onkeydown in memorial_image1')
+   evt = evt || window.event;
+   switch (evt.keyCode) 
+    	{
+        case 37:
+            parent.parent.leftArrowPressed();
+            break;
+            
+        case 38:
+            parent.parent.upArrowPressed();
+            break;
+            
+        case 39:
+            parent.parent.rightArrowPressed();
+            break;
+            
+        case 40:
+            parent.parent.downArrowPressed();
+            break;
+    	}
+};
 
 
+/*
 // This function captures the left and right arrow key events
 onkeydown = function(evt) 
 {
-console.log('onkeydown2');
+console.log('onkeydown in memorial_image2');
 HandleKeyDownEvent(evt);
 };
 
+
+// This function captures the left and right arrow key events
+function HandleKeyDownEvent(evt) 
+{
+	console.log('onkeydown in memorial_image3');
+   evt = evt || window.event;
+   switch (evt.keyCode) 
+    	{
+        case 37:
+            leftArrowPressed();
+            break;
+            
+        case 38:
+            upArrowPressed();
+            break;
+            
+        case 39:
+            rightArrowPressed();
+            break;
+            
+        case 40:
+            downArrowPressed();
+            break;
+    	}
+};
+*/
 
 //  End of hiding comment --></SCRIPT>
 </HEAD>
@@ -54,10 +105,8 @@ HandleKeyDownEvent(evt);
 document.write('<center><iframe src="' + parent.parent.ImageName + '" width=' + parent.parent.ImageWidth + ' height=' + parent.parent.ImageHeight + ' BORDER=2 id=imageFile ALIGN=bottom onload="FinishLoad();"></iframe>');
 //document.write('<center><iframe src="' + parent.parent.ImageName + '" BORDER=2 id=imageFile ALIGN=bottom onload="FinishLoad();"></iframe>');
 
-if (parent.parent.Sizecode != 5)
-	{
-	document.write('<P>' + parent.parent.Caption + '</P></center>' + parent.parent.Date_time + ' (file name: ' + parent.parent.ID + '.pdf)');
-	}
+document.write('<P>' + parent.parent.Caption + '</P></center>' + parent.parent.Date_time + ' (file name: ' + parent.parent.ID + '.pdf)');
+	
 </SCRIPT></P>
 </BODY>
 </HTML>

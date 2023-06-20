@@ -1,5 +1,7 @@
-<HTML>
+<!DOCTYPE html>
+<HTML lang="en">
 <HEAD>
+	<meta charset="utf-8" />
    <TITLE>Navigation</TITLE>
 <SCRIPT LANGUAGE="JavaScript"><!--  Hide this from JavaScript-challenged browsers
 
@@ -43,7 +45,7 @@ function MouseDown(gifNumber)
 
 function MouseOver(imageNumber)
 {
-		console.log ("MouseOver: imageNumber = " + imageNumber);
+	//console.log ("MouseOver: imageNumber = " + imageNumber);
 	switch (imageNumber)
 		{
 		case 0:
@@ -87,7 +89,7 @@ function MouseOver(imageNumber)
 // This function captures the left and right arrow key events
 document.onkeydown = function(evt) 
 {
-	console.log('onkeydown in navigationbuttons')
+	//console.log('onkeydown in navigationbuttons')
    evt = evt || window.event;
    switch (evt.keyCode) 
     	{

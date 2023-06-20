@@ -1,6 +1,8 @@
-<HTML>
+<!DOCTYPE html>
+<HTML lang="en">
 <!--This file created for Memorial File Set-->
 <HEAD>
+	<meta charset="utf-8" />
    <TITLE>Picture</TITLE>
 <SCRIPT LANGUAGE="JavaScript" SRC="memorial_common.js"><!--  Hide this from JavaScript-challenged browsers
 document.write("memorial_common.js file not found"); //  End of hiding comment --></SCRIPT><SCRIPT LANGUAGE="JavaScript"><!--  Hide this from JavaScript-challenged browsers
@@ -40,7 +42,7 @@ function FinishLoad()
 // This function captures the arrow key events
 document.onkeydown = function(evt) 
 {
-	console.log('onkeydown in memorial_image1')
+	//console.log('onkeydown in memorial_image1')
    evt = evt || window.event;
    switch (evt.keyCode) 
     	{
@@ -101,12 +103,12 @@ function HandleKeyDownEvent(evt)
 //  End of hiding comment --></SCRIPT>
 </HEAD>
 <BODY>
-<P><SCRIPT LANGUAGE=JavaScript>
-document.write('<center><iframe src="' + parent.parent.ImageName + '" width=' + parent.parent.ImageWidth + ' height=' + parent.parent.ImageHeight + ' BORDER=2 id=imageFile ALIGN=bottom onload="FinishLoad();"></iframe>');
-//document.write('<center><iframe src="' + parent.parent.ImageName + '" BORDER=2 id=imageFile ALIGN=bottom onload="FinishLoad();"></iframe>');
+<SCRIPT LANGUAGE=JavaScript>
+document.write('<center><iframe src="' + parent.parent.ImageName + '" width=' + parent.parent.ImageWidth + ' height=' + parent.parent.ImageHeight + ' BORDER=2 id=imageFile ALIGN=bottom onload="FinishLoad();"></iframe></center>');
+//document.write('<center><iframe src="' + parent.parent.ImageName + '" BORDER=2 id=imageFile ALIGN=bottom onload="FinishLoad();"></iframe></center>');
 
-document.write('<P>' + parent.parent.Caption + '</P></center>' + parent.parent.Date_time + ' (file name: ' + parent.parent.ID + '.pdf)');
+document.write('<P>' + parent.parent.Caption + '</P>' + parent.parent.Date_time + ' (file name: ' + parent.parent.ID + '.pdf)');
 	
-</SCRIPT></P>
+</SCRIPT>
 </BODY>
 </HTML>

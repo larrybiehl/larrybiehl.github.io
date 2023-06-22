@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+	
    <title>St. Andrew Memorials</title>
 	<meta name="generator" content="BBEdit 13.5" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
@@ -130,11 +131,8 @@ LastSlide = index;
 	
 SetImageVariables(FirstSlide);
 
-//ItemClicked (FirstSlide);
-
-//<iframe id="obj" src="Memorial_Files/Adams_Lisa_page_for_book.pdf" onload="FinishLoad();">object can't be rendered</iframe>
-
-//  End of hiding comment --></SCRIPT>
+//  End of hiding comment
+</SCRIPT>
 </head>
 
 <body onload="FinishLoad ()">
@@ -176,11 +174,11 @@ SetImageVariables(FirstSlide);
     		<div class="box listViewCell" id="listView">List</div>
     		<div class="box g" id="pdfFile">
     			<div id="container">
-     				<object id="obj" data="Memorial_Files/Adams_Lisa_page_for_book.pdf" onload="FinishLoad();">object can't be rendered</object>
+     				<object id="obj" data="Memorial_Files/Adams_Lisa_page_for_book.pdf" onload="FinishPDFLoad()" onerror="PDFLoadError()" onbeforeunload="OnBeforeUnload()">object can't be rendered</object>
 					<table>
 						<tr>
 							<td id="Date">Date</td>
-							<td id="FileName" style="border-style: none; padding-left: 30px">File Name<td>
+							<td id="FileName" style="border-style: none; padding-left: 30px">File Name</td>
 						</tr>
 					</table>
     			</div>

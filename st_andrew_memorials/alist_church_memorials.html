@@ -58,7 +58,8 @@
   		<div class="box mainSection">
     		<div class="box listViewCell" id="listView">List</div>
     		<div class="box g" id="pdfFileContainer">
-    			<div id="container">
+    			<div id=pdfMessage></div>
+    			<div id="container" ontouch="PDFContainerTouched()">
 					<iframe id="pdfFile" src="blank.pdf" width="99%" height="96%" onload="FinishPDFLoad()" onerror="PDFLoadError()">object can't be rendered</iframe>
 					<table>
 						<tr>

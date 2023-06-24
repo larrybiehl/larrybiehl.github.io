@@ -15,7 +15,7 @@ FirstSlide = index;
 
 index++
 slideVector[index] = new AddPDFDoc(index, "0Averys");
-slideVector[index].date_time = "Nanette Avery: 1998 & Arthur: 1998";
+slideVector[index].date_time = "Nanette: 1998 & Arthur: 1998";
 slideVector[index].listTitle = "Arthur & Nanette Avery";
 
 index++

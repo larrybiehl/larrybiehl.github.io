@@ -60,7 +60,7 @@
     		<div class="box g" id="pdfFileContainer">
     			<div id=pdfMessage onclick="PDFContainerTouched()"></div>
     			<div id="container" ontouch="PDFContainerTouched()" onclick="PDFContainerTouched()">
-					<iframe id="pdfFile" src="blank.pdf" width="99%" height="96%" onload="FinishPDFLoad()" onerror="PDFLoadError()">object can't be rendered</iframe>
+					<iframe id="pdfFile" src="blank.pdf" width="99%" height="96%" onload="FinishPDFLoad()" onerror="PDFLoadError()" onclick="PDFContainerTouched()">object can't be rendered</iframe>
 					<table>
 						<tr>
 							<td id="Date">Date</td>

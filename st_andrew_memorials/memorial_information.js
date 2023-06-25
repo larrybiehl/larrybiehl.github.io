@@ -241,11 +241,6 @@ slideVector[index] = new  AddPDFDoc(index, "0KepnerB&J.pdf");
 slideVector[index].date_time = "Bill: 2007 & Jean: 2009";
 slideVector[index].listTitle = "Bill & Jean Kepner";
 
-index++
-slideVector[index] = new  AddPDFDoc(index, "Kepner_Jean.pdf");
-slideVector[index].date_time = "2009";
-slideVector[index].listTitle = "Jean Kepner";
-
 index++;
 slideVector[index] = new AddPDFDoc(index, "Kirkpatrick_Ed_Peg.pdf");
 slideVector[index].date_time = "Peg: 2006 & Ed: 2019";

@@ -24,9 +24,9 @@
 		<div class="box a">
 			<table>
 				<tr>
-					<td style="border-style: none; padding-left: 30px">
+					<td style="border-style: none; padding-left: 25px">
 						<div class="listButtonBox">
-							<button id="list" onclick="ChangeList();">Hide List</button>
+							<button class= "listButton" id="list" onclick="ChangeList();">Hide List</button>
 						</div>
 					</td>
 					<td style="border-style: none; padding-top: 5px">
@@ -38,18 +38,19 @@
 						</div>
 					</td>
 					<td style="border-style: none"
-							<center><FORM ACTION="" METHOD=POST name=pdfShowForm>
-   							<select id="show" onChange="SlideShow(1);">
-     								<OPTION VALUE="-1" SELECTED>No Slide Show
-      							<OPTION VALUE=3>Slide Show - 3 s
-      							<OPTION VALUE=10>Slide Show-10 s
-      							<OPTION VALUE=20>Slide Show-20 s
-      							<OPTION VALUE=30>Slide Show-30 s
-      							<OPTION VALUE=60>Slide Show-60 s
-      							<OPTION VALUE=120>Slide Show-2 m
-   							</SELECT>
+							<center>
+								<form ACTION="" METHOD=POST name=pdfShowForm>
+									<select class="showDropDown" id="show" onChange="SlideShow(1);">
+										<OPTION VALUE="-1" SELECTED>No Slide Show
+										<OPTION VALUE=3>Slide Show - 3 s
+										<OPTION VALUE=10>Slide Show-10 s
+										<OPTION VALUE=20>Slide Show-20 s
+										<OPTION VALUE=30>Slide Show-30 s
+										<OPTION VALUE=60>Slide Show-60 s
+										<OPTION VALUE=120>Slide Show-2 m
+									</SELECT>
+								</form>
    						</center>
-							</FORM>
 						</div>
 					</td>
 				</tr>

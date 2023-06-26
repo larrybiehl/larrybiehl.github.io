@@ -89,3 +89,20 @@
 .hide .g {
 	grid-column: 1 / 3;
 	}
+
+#show_me {
+  padding: 2px;
+  cursor: pointer;
+  color:#4A98EC;
+  float:right;
+  display: inline;
+}
+
+.introjs-helperLayer {
+  background-color: transparent !important;
+}
+
+.introjs-overlay {
+  opacity: 0 !important;
+}
+

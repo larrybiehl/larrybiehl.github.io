@@ -196,6 +196,11 @@ slideVector[index].date_time = "2011";
 slideVector[index].listTitle = "William Haueisen";
 
 index++
+slideVector[index] = new AddPDFDoc(index, "oHayden_pages_for_book.pdf");
+slideVector[index].date_time = "2022";
+slideVector[index].listTitle = "Richard Hayden";
+
+index++
 slideVector[index] = new AddPDFDoc(index, "0HinchmanD.pdf");
 slideVector[index].date_time = "2016";
 slideVector[index].listTitle = "Dorothy Hinchman";
@@ -211,6 +216,16 @@ slideVector[index].date_time = "2014";
 slideVector[index].listTitle = "Larry Hoffman";
 
 index++
+slideVector[index] = new AddPDFDoc(index, "OHopkins_Beverly_page_for_book.pdf");
+slideVector[index].date_time = "2017";
+slideVector[index].listTitle = "Beverly Hopkins";
+
+index++
+slideVector[index] = new AddPDFDoc(index, "OHullBetsy_page_for_book.pdf");
+slideVector[index].date_time = "2017";
+slideVector[index].listTitle = "Betsy Hull";
+
+index++
 slideVector[index] = new AddPDFDoc(index, "0HuieE.pdf");
 slideVector[index].date_time = "2008";
 slideVector[index].listTitle = "Emily Huie";
@@ -222,6 +237,11 @@ slideVector[index].listTitle = "Velma Huie";
 
 index++
 AddListBreakToSlideVector (index, "J");
+
+index++
+slideVector[index] = new AddPDFDoc(index, "OJackson_Nicholas_book_pages.pdf");
+slideVector[index].date_time = "2017";
+slideVector[index].listTitle = "Nicholas Jackson";
 
 index++
 slideVector[index] = new AddPDFDoc(index, "0Jones.pdf");
@@ -283,6 +303,11 @@ index++
 AddListBreakToSlideVector (index, "M");
 
 index++;
+slideVector[index] = new AddPDFDoc (index, "OMills_page_for_book.pdf");
+slideVector[index].date_time = "2021";
+slideVector[index].listTitle = "W.L. Mills";
+
+index++;
 slideVector[index] = new AddPDFDoc (index, "0Morris_K_for_book.pdf");
 slideVector[index].date_time = "2018";
 slideVector[index].listTitle = "Kim Morris";
@@ -333,6 +358,11 @@ slideVector[index] = new AddPDFDoc (index, "0OliverS.pdf");
 slideVector[index].date_time = "1992";
 slideVector[index].listTitle = "Terri Oliver";
 
+index++;
+slideVector[index] = new AddPDFDoc (index, "OOneal_page_for_book.pdf");
+slideVector[index].date_time = "2020";
+slideVector[index].listTitle = "Nels Oneal";
+
 index++
 AddListBreakToSlideVector (index, "P");
 
@@ -356,6 +386,11 @@ AddListBreakToSlideVector (index, "R");
 
 index++;
 slideVector[index] = new AddPDFDoc (index, "0Remley.pdf");
+slideVector[index].date_time = "2018";
+slideVector[index].listTitle = "Loretta Robertson";
+
+index++;
+slideVector[index] = new AddPDFDoc (index, "oRobertson_L_page_or_book.pdf");
 slideVector[index].date_time = "1991";
 slideVector[index].listTitle = "Don Remley";
 
@@ -371,6 +406,11 @@ slideVector[index].listTitle = "Sam Robinson";
 
 index++
 AddListBreakToSlideVector (index, "S");
+
+index++;
+slideVector[index] = new AddPDFDoc (index, "OSchall_O_and_E.pdf");
+slideVector[index].date_time = "Elwyn: 1998 & Odella: 2017";
+slideVector[index].listTitle = "Elwyn & Odella Schall";
 
 index++;
 slideVector[index] = new AddPDFDoc (index, "0Schultz_Gray.pdf");
@@ -396,6 +436,11 @@ index++;
 slideVector[index] = new AddPDFDoc (index, "0Sharples.pdf");
 slideVector[index].date_time = "2002";
 slideVector[index].listTitle = "Jerry Sharples";
+
+index++;
+slideVector[index] = new AddPDFDoc (index, "Shaw_Stanley_page.pdf");
+slideVector[index].date_time = "2019";
+slideVector[index].listTitle = "Stanley Shaw";
 
 index++;
 slideVector[index] = new AddPDFDoc (index, "0Shipley.pdf");
@@ -447,6 +492,11 @@ index++;
 slideVector[index] = new AddPDFDoc (index, "OWeis_Chuck_and_Doris_for_book.pdf");
 slideVector[index].date_time = "Chuck: 2009 & Doris: 2020";
 slideVector[index].listTitle = "Chuck & Doris Weis";
+
+index++;
+slideVector[index] = new AddPDFDoc (index, "OWilcox_M_page_for_book.pdf");
+slideVector[index].date_time = "2021";
+slideVector[index].listTitle = "Mary Wilcox";
 
 LastSlide = index;
 

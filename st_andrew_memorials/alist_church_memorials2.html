@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+	
+   <title>St. Andrew Memorials</title>
+	<meta name="generator" content="BBEdit 13.5" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<link rel="stylesheet" href="memorial_site.css">
+	<link rel="stylesheet" href="introjs.min.css">
+	<script language="JavaScript" src="memorial_common2.js"></script>
+	<script language="JavaScript" src="memorial_information2.js"></script>
+	<script language="JavaScript" src="intro.min.js"></script>
+	<script language="JavaScript">
+	
+	LoadMemorialInformation ();
+
+	SetImageVariables(FirstSlide);
+
+	</script>
+</head>
+
+<body onload="FinishLoad ()">
+	<div class="wrapper">
+		<div class="box a" 
+>
+			<table>
+				<tr>
+					<td style="border-style: none; padding-left: 25px">
+						<div class="listButtonBox" data-intro="Select to hide or show the list of names." data-position="right">
+							<button class= "listButton" id="list" onclick="ChangeList();">Hide List</button>
+						</div>
+					</td>
+					<td style="border-style: none; padding-top: 5px">
+						<div class="navigationButtonsBox" data-intro="Use these buttons to step through the names in the list one at a time. In order left to right: go to the top of the list, go to the previous name, go to the next name, go to the bottom of the list. One can also use the arrow keys: up arrow goes to the top of the list, left arrow to the previous name, right arrow to the next name, and down arrow to the last in the list." data-position="right">
+							<A HREF="JavaScript:ClickNext(FirstSlide, 1);" onMouseOver="MouseOver(1); return true;" onMouseDown="MouseDown(1);"><img  id="gif0" src="first.gif" ALT="First" WIDTH=32 HEIGHT=32 BORDER=0 ALIGN=bottom></A>
+							<A HREF="JavaScript:ClickNext(PreviousSlide, 2);" onMouseOver="MouseOver(2); return true;" onMouseDown="MouseDown(2);"><img  id="gif1" src="prev.gif" ALT="Previous" WIDTH=32 HEIGHT=32 BORDER=0 ALIGN=bottom></A>
+							<A HREF="JavaScript:ClickNext(NextSlide, 3);" onMouseOver="MouseOver(3); return true;" onMouseDown="MouseDown(3);" ><img id="gif2" src="next.gif" ALT="Next" WIDTH=32 HEIGHT=32 BORDER=0 ALIGN=bottom></A>
+							<A HREF="JavaScript:ClickNext(LastSlide, 4);" onMouseOver="MouseOver(4); return true;" onMouseDown="MouseDown(4);" ><img id="gif3" src="last.gif" ALT="Last" WIDTH=32 HEIGHT=32 BORDER=0 ALIGN=bottom></A>
+						</div>
+					</td>
+					<td style="border-style: none">
+							<center>
+								<form class="showDropDownForm" data-intro="Allows one to control a 'slide' show of the file for each person in the list with a choice of delays before going to the next person. The show will loop back to the first person after the last person in the list is shown." data-position="right" ACTION="" METHOD=POST name=pdfShowForm>
+									<select class="showDropDown" id="show" onChange="SlideShow(1);">
+										<OPTION VALUE="-1" SELECTED>No Slide Show
+										<OPTION VALUE=3>Slide Show - 3 s
+										<OPTION VALUE=10>Slide Show-10 s
+										<OPTION VALUE=20>Slide Show-20 s
+										<OPTION VALUE=30>Slide Show-30 s
+										<OPTION VALUE=60>Slide Show-60 s
+										<OPTION VALUE=120>Slide Show-2 m
+									</SELECT>
+								</form>
+   						</center>
+						</div>
+					</td>	
+						<span id="show_me" data-intro="This tour will describe the choices for this display of Memorial information. In addition to the buttons below, you may use the left and right arrow keys for navigation and 'esc' to exit the tour." data-position="left" data-step="1" title="Select for help information"><img src="1396823_circle_info_information_letter_icon_24.png"></span></td>
+				</tr>
+			</table>
+		</div>
+  		<div class="box mainSection">
+    		<div class="box listViewCell" id="listView" data-intro="Select name in the list to show memorial information for that person to the right." data-position="right">List</div>
+    		<div class="box g" id="pdfFileContainer">
+    			<div id="pdfMessage" data-intro="Browsers for mobile phones and tablets do not allow one to display multiple pdf pages within a browser window. Only the first page is shown. Tap on this line to cause the entire file to be displayed in a different window. Select the left arrow key in the upper left of the browser window to go back to the list." data-position="bottom" onclick="PDFContainerTouched()"></div>
+    			<div id="container" ontouch="PDFContainerTouched()" onclick="PDFContainerTouched()">
+					<iframe id="pdfFile" src="blank.pdf" width="99%" height="96%" onload="FinishPDFLoad()" onerror="PDFLoadError()" onclick="PDFContainerTouched()">object can't be rendered</iframe>
+					<table>
+						<tr>
+							<td id="Date" style="border-style: none; padding-right: 30px" data-intro="Year of death." data-position="top">Date</td>
+							<td id="FileName" style="border-style: none;" data-intro="Currently the name of the file being displayed." data-position="top">File Name</td>
+						</tr>
+					</table>
+    			</div>
+			</div>
+  		</div>
+	</div>
+</body>
+</html>

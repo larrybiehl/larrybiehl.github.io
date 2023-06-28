@@ -124,6 +124,44 @@ slideVector[index] = new AddPDFDoc(index, "0Compton.html");
 slideVector[index].date_time = "Maude: 1966 & Leroy: 1982";
 slideVector[index].listTitle = "Maude & Leroy Compton";
 
+index++
+AddListBreakToSlideVector  (index, "D");
+
+index++
+slideVector[index] = new AddPDFDoc(index, "0DeckardDoris.html");
+slideVector[index].date_time = "2005";
+slideVector[index].listTitle = "Doris Deckard";
+
+index++
+slideVector[index] = new AddPDFDoc(index, "0DeckardM.html");
+slideVector[index].date_time = "2011";
+slideVector[index].listTitle = "Myron Deckard";
+
+index++
+slideVector[index] = new AddPDFDoc(index, "0DeckardR.html");
+slideVector[index].date_time = "2010";
+slideVector[index].listTitle = "Randy Deckard";
+
+index++
+slideVector[index] = new AddPDFDoc(index, "0DeTurk.html");
+slideVector[index].date_time = "1996";
+slideVector[index].listTitle = "Karmen Deturk";
+
+index++
+slideVector[index] = new AddPDFDoc(index, "0Dexter.html");
+slideVector[index].date_time = "1999";
+slideVector[index].listTitle = "Ryan Dexter";
+
+index++
+slideVector[index] = new AddPDFDoc(index, "0Diekman.html");
+slideVector[index].date_time = "1992";
+slideVector[index].listTitle = "Dorothy Diekman";
+
+index++
+slideVector[index] = new AddPDFDoc(index, "0DirlamJ.html");
+slideVector[index].date_time = "2016";
+slideVector[index].listTitle = "James Dirlam";
+
 LastSlide = index;
 
 }	// end "LoadMemorialInformation"

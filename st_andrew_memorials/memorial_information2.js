@@ -91,6 +91,39 @@ slideVector[index] = new AddPDFDoc(index, "0BurchbyG_and_Louise_page_for_book.ht
 slideVector[index].date_time = "Glen: 2012 & Louise: 2021";
 slideVector[index].listTitle = "Glen & Louise Burchby";
 
+index++
+AddListBreakToSlideVector  (index, "C");
+
+index++
+slideVector[index] = new AddPDFDoc(index, "0Chappell.html");
+slideVector[index].date_time = "2000";
+slideVector[index].listTitle = "G. Joan Smith Chappell";
+
+index++
+slideVector[index] = new AddPDFDoc(index, "0Chu.html");
+slideVector[index].date_time = "2000";
+slideVector[index].listTitle = "Agnes Ching-Mei Chu";
+
+index++
+slideVector[index] = new AddPDFDoc(index, "0ClarkD&M.html");
+slideVector[index].date_time = "Delmar: 2009 & Mary Jane: 2012";
+slideVector[index].listTitle = "Delmar & Mary Jane Clark";
+
+index++
+slideVector[index] = new AddPDFDoc(index, "0Combs.html");
+slideVector[index].date_time = "1999";
+slideVector[index].listTitle = "Joyce Combs";
+
+index++
+slideVector[index] = new AddPDFDoc(index, "0ComptonE.html");
+slideVector[index].date_time = "1999";
+slideVector[index].listTitle = "Eileen Compton";
+
+index++
+slideVector[index] = new AddPDFDoc(index, "0Compton.html");
+slideVector[index].date_time = "Maude: 1966 & Leroy: 1982";
+slideVector[index].listTitle = "Maude & Leroy Compton";
+
 LastSlide = index;
 
 }	// end "LoadMemorialInformation"

@@ -162,7 +162,6 @@ slideVector[index] = new AddPDFDoc(index, "0DirlamJ.html");
 slideVector[index].date_time = "2016";
 slideVector[index].listTitle = "James Dirlam";
 
-
 index++
 AddListBreakToSlideVector (index, "E");
 

@@ -162,6 +162,30 @@ slideVector[index] = new AddPDFDoc(index, "0DirlamJ.html");
 slideVector[index].date_time = "2016";
 slideVector[index].listTitle = "James Dirlam";
 
+
+index++
+AddListBreakToSlideVector (index, "E");
+
+index++
+slideVector[index] = new AddPDFDoc(index, "0EdwardsL.html");
+slideVector[index].date_time = "2014";
+slideVector[index].listTitle = "Loraine Edwards";
+
+index++
+slideVector[index] = new AddPDFDoc(index, "OEhrlinger_page_in_book.html");
+slideVector[index].date_time = "2020";
+slideVector[index].listTitle = "Addison Ehrlinger";
+
+index++
+slideVector[index] = new AddPDFDoc(index, "0Ellis.html");
+slideVector[index].date_time = "1991";
+slideVector[index].listTitle = "Bessie Ellis";
+
+index++
+slideVector[index] = new AddPDFDoc(index, "0Erwin.html");
+slideVector[index].date_time = "Amy: 1992 & Eldon: 2001";
+slideVector[index].listTitle = "Eldon & Amy Erwin";
+
 LastSlide = index;
 
 }	// end "LoadMemorialInformation"

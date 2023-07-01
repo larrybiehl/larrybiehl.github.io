@@ -421,7 +421,7 @@ AddListBreakToSlideVector (index, "O");
 index++;
 slideVector[index] = new AddPDFDoc (index, "0OberlanderR.pdf");
 slideVector[index].date_time = "2007";
-slideVector[index].listTitle = "Ruth Oberlander.pdf";
+slideVector[index].listTitle = "Ruth Oberlander";
 
 index++;
 slideVector[index] = new AddPDFDoc (index, "0OkosL.pdf");

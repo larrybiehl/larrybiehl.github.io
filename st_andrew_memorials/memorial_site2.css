@@ -1,7 +1,7 @@
 
-   #container { overflow: auto; -webkit-overflow-scrolling: touch; height: 90vh;}
-   object { width: 95%; height: 95% }
-	body { margin: 1px; }
+   #container { overflow: auto; -webkit-overflow-scrolling: touch; height: 92vh;}
+  /* object { width: 95%; height: 95% } */
+  /* body { margin: 1px; } */
 
   .wrapper {
     display: grid;
@@ -27,7 +27,7 @@
     color: #444;
   }
 
-  .a {
+  .controlSection {
     grid-column: col 1 / span 2;
     grid-row: row 1;
   }

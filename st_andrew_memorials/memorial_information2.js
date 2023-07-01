@@ -34,6 +34,11 @@ slideVector[index].date_time = "Emma: 2017 & David: 2022";
 slideVector[index].listTitle = "Emma & David Alvey";
 
 index++
+slideVector[index] = new AddPDFDoc(index, "0Averys.html");
+slideVector[index].date_time = "Nanette: 1998 & Arthur: 1998";
+slideVector[index].listTitle = "Arthur & Nanette Avery";
+
+index++
 AddListBreakToSlideVector  (index, "B");
 
 index++

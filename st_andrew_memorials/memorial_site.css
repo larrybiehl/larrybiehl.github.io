@@ -23,7 +23,7 @@
   }
 
   .box .box {
-    background-color: #fff;
+    background-color: #eee;
     color: #444;
   }
 
@@ -70,6 +70,15 @@
 .listViewCell p {
   margin-top: 0.75em ;
   margin-bottom: 0.75em ;
+}
+
+#pdfFile {
+border-top-width: 1px;
+border-right-width: 1px;
+border-bottom-width: 1px;
+border-left-width: 1px;
+border-color: #444; 
+
 }
   
 .showDropDownForm {

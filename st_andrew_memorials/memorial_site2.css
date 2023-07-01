@@ -23,7 +23,7 @@
   }
 
   .box .box {
-    background-color: #fff;
+    background-color: #eee;
     color: #444;
   }
 
@@ -48,6 +48,16 @@
 	 overflow-y: scroll;
   }
 
+#pdfFile {
+    background-color: #fff;
+border-top-width: 1px;
+border-right-width: 1px;
+border-bottom-width: 1px;
+border-left-width: 1px;
+border-color: #444; 
+
+}
+
   .g {
     grid-column: 2;
     grid-row: 2;
@@ -55,8 +65,10 @@
   }
   
   #pdfFile {
-    padding-top: 20px;
+    padding-top: 20;
     padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
 }
   
 .listButton {

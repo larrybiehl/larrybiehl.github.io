@@ -27,7 +27,7 @@
     color: #444;
   }
 
-  .a {
+  .controlSection {
     grid-column: col 1 / span 2;
     grid-row: row 1;
   }
@@ -91,7 +91,10 @@
 	}
 
 #show_me {
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   cursor: pointer;
   color:#4A98EC;
   float:right;

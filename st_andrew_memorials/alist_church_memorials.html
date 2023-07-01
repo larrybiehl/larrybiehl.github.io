@@ -23,8 +23,7 @@
 
 <body onload="FinishLoad ()">
 	<div class="wrapper">
-		<div class="box a" 
->
+		<div class="box controlSection" id="controlSectionID">
 			<table>
 				<tr>
 					<td style="border-style: none; padding-left: 25px">
@@ -60,14 +59,14 @@
 				</tr>
 			</table>
 		</div>
-  		<div class="box mainSection">
+  		<div class="box mainSection" id="mainSectionID">
     		<div class="box listViewCell" id="listView" data-intro="Select name in the list to show memorial information for that person to the right." data-position="right">List</div>
     		<div class="box g" id="pdfFileContainer">
     			<div id="pdfMessage" data-intro="Browsers for mobile phones and tablets do not allow one to display multiple pdf pages within a browser window. Only the first page is shown. Tap on this line to cause the entire file to be displayed in a different window. Select the left arrow key in the upper left of the browser window to go back to the list." data-position="bottom" onclick="PDFContainerTouched()"></div>
     			<div id="container" ontouch="PDFContainerTouched()" onclick="PDFContainerTouched()">
-					<iframe id="pdfFile" src="blank.pdf" width="99%" height="96%" onload="FinishPDFLoad()" onerror="PDFLoadError()" onclick="PDFContainerTouched()">object can't be rendered</iframe>
+					<iframe id="pdfFile" src="blank.pdf" style="height:99%; width:96%; border:none" title="Memorial Information" onload="FinishPDFLoad()" onerror="PDFLoadError()" onclick="PDFContainerTouched()">object can't be rendered</iframe>
 					<table id="infoLine">
-						<tr>
+						<tr id="infoLine">
 							<td id="Date" style="border-style: none; padding-right: 30px" data-intro="Year of death." data-position="top">Date</td>
 							<td id="FileName" style="border-style: none;" data-intro="Currently the name of the file being displayed." data-position="top">File Name</td>
 						</tr>

@@ -1,0 +1,113 @@
+
+   #container { overflow: auto; -webkit-overflow-scrolling: touch; height: 92vh;}
+  /* object { width: 95%; height: 95% } */
+  /* body { margin: 1px; } */
+
+  .wrapper {
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: [col] 150px [col] 1fr;
+    grid-template-rows: [row] 40px [row] 1fr ;
+    grid-auto-flow: column dense;
+    background-color: #fff;
+    color: #444;
+  }
+
+  .box {
+    background-color: #fff;
+    color: #000;
+    border-radius: 1px;
+    padding: 3px;
+    font-size: 100%;
+
+  }
+
+  .box .box {
+    background-color: #fff;
+    color: #444;
+  }
+
+  .controlSection {
+    grid-column: col 1 / span 2;
+    grid-row: row 1;
+  }
+
+  .mainSection{
+    grid-column: col 1 / span 2;
+    grid-row: row 2;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: minmax(0, 150px) auto;
+  }
+
+  .listViewCell {
+    grid-column: 1;
+    grid-row: 2;
+    width: 150px;
+    height: 90vh;
+	 overflow-y: scroll;
+  }
+
+  .g {
+    grid-column: 2;
+    grid-row: 2;
+    width: 100%;
+  }
+  
+  #pdfFile {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+  
+.listButton {
+		height: 25px;
+   	font-size: 95%;
+}
+
+.listButtonBox {
+		width: 150px;
+}
+
+.navigationButtonsBox {
+		width: 200px;
+}
+
+.listViewCell p {
+  margin-top: 0.75em ;
+  margin-bottom: 0.75em ;
+}
+  
+.showDropDownForm {
+		size: 27px;
+}
+  
+.showDropDown {
+		height: 25px;
+   	font-size: 95%;
+}
+
+
+.hide .listViewCell {
+	display: none;
+}
+
+.hide .g {
+	grid-column: 1 / 3;
+	}
+
+#show_me {
+  padding: 10px;
+  cursor: pointer;
+  color:#4A98EC;
+  float:right;
+  display: inline;
+}
+
+.introjs-helperLayer {
+  background-color: transparent !important;
+}
+
+.introjs-overlay {
+  opacity: 0 !important;
+}
+

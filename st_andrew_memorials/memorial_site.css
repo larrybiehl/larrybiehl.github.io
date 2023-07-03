@@ -7,7 +7,7 @@
    	padding-left: 3px
    	}
    /*object { width: 95%; height: 95% }*/
-	/*body { margin: 1px; }*/
+	body { margin: 1px; }
 
   .wrapper {
     display: grid;

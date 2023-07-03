@@ -1,17 +1,23 @@
 
-   #container { overflow: auto; -webkit-overflow-scrolling: touch; height: 92vh;}
+   #container { 
+   	overflow: auto; 
+   	-webkit-overflow-scrolling: touch; 
+   	height: 100vh;
+   	padding-top: 0px;
+   	padding-left: 2
+   	}
   /* object { width: 95%; height: 95% } */
-  /* body { margin: 1px; } */
+  body { margin: 1px; }
 
   .wrapper {
     display: grid;
     grid-gap: 2px;
     grid-template-columns: [col] 150px [col] 1fr;
-    grid-template-rows: [row] 40px [row] 1fr ;
+    grid-template-rows: [row] 40px [row] 1fr [row] 28px;
     grid-auto-flow: column dense;
     background-color: #fff;
     color: #444;
-  }
+  } 
 
   .box {
     background-color: #fff;
@@ -42,35 +48,26 @@
 
   .listViewCell {
     grid-column: 1;
-    grid-row: 2;
+    grid-row: 2 / span 2;
     width: 150px;
-    height: 90vh;
+    height: 100vh;
 	 overflow-y: scroll;
   }
-
-#pdfFile {
-    background-color: #fff;
-border-top-width: 1px;
-border-right-width: 1px;
-border-bottom-width: 1px;
-border-left-width: 1px;
-border-color: #444; 
-
-}
+  
 
   .g {
     grid-column: 2;
     grid-row: 2;
-    width: 100%;
+    width: 95%;
   }
   
-  #pdfFile {
-    padding-top: 20;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-}
-  
+  .footer {
+    grid-column: col 2;
+    grid-row: row 3;
+    background-color: #eee;
+    width: 98.2%;
+  	}
+  	
 .listButton {
 		height: 25px;
    	font-size: 95%;
@@ -85,8 +82,38 @@ border-color: #444;
 }
 
 .listViewCell p {
+  margin-left: 0.3em ;
   margin-top: 0.75em ;
   margin-bottom: 0.75em ;
+}
+
+#pdfFile {
+   background-color: #fff;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-color: #444; 
+   margin-top: 5px;
+	margin-left: 5px;
+   margin-right: 5px;
+   margin-bottom: 5px;
+  /* padding-top: 5px;
+	padding-left: 5px;
+   padding-right: 5px;
+   padding-bottom: 0px;*/
+
+}
+
+#Date {
+border-style: none; 
+padding-left: 10px; 
+padding-right: 30px;
+
+}
+
+#infoLine td {
+text-align: middle;
 }
   
 .showDropDownForm {
@@ -108,7 +135,10 @@ border-color: #444;
 	}
 
 #show_me {
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top:3px;
+  padding-bottom: 8px;
   cursor: pointer;
   color:#4A98EC;
   float:right;

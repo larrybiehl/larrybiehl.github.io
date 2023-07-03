@@ -24,14 +24,14 @@
 <body onload="FinishLoad ()">
 	<div class="wrapper">
 		<div class="box controlSection" id="controlSectionID"">
-			<table>
+			<table id="controlTableID">
 				<tr>
 					<td style="border-style: none; padding-left: 25px">
 						<div class="listButtonBox" data-intro="Select to hide or show the list of names." data-position="right">
 							<button class= "listButton" id="list" onclick="ChangeList();">Hide List</button>
 						</div>
 					</td>
-					<td style="border-style: none; padding-top: 5px">
+					<td style="border-style: none; padding-top: 0px">
 						<div class="navigationButtonsBox" data-intro="Use these buttons to step through the names in the list one at a time. In order left to right: go to the top of the list, go to the previous name, go to the next name, go to the bottom of the list. One can also use the arrow keys: up arrow goes to the top of the list, left arrow to the previous name, right arrow to the next name, and down arrow to the last in the list." data-position="right">
 							<A HREF="JavaScript:ClickNext(FirstSlide, 1);" onMouseOver="MouseOver(1); return true;" onMouseDown="MouseDown(1);"><img  id="gif0" src="first.gif" ALT="First" WIDTH=32 HEIGHT=32 BORDER=0 ALIGN=bottom></A>
 							<A HREF="JavaScript:ClickNext(PreviousSlide, 2);" onMouseOver="MouseOver(2); return true;" onMouseDown="MouseDown(2);"><img  id="gif1" src="prev.gif" ALT="Previous" WIDTH=32 HEIGHT=32 BORDER=0 ALIGN=bottom></A>
@@ -50,6 +50,7 @@
 										<OPTION VALUE=30>Slide Show-30 s
 										<OPTION VALUE=60>Slide Show-60 s
 										<OPTION VALUE=120>Slide Show-2 m
+										<OPTION VALUE=600>Slide Show-10 m
 									</SELECT>
 								</form>
    						</center>
@@ -64,15 +65,17 @@
     		<div class="box g" id="pdfFileContainer">
     			<!--<div id="pdfMessage" data-intro="Browsers for mobile phones and tablets do not allow one to display multiple pdf pages within a browser window. Only the first page is shown. Tap on this line to cause the entire file to be displayed in a different window. Select the left arrow key in the upper left of the browser window to go back to the list." data-position="bottom" onclick="PDFContainerTouched()"></div>-->
     			<div id="container" ontouch="PDFContainerTouched()" onclick="PDFContainerTouched()">
-					<iframe id="pdfFile" src="blank.pdf" style="height:99%; width:90%;" title="Memorial Information" onload="FinishPDFLoad()" onerror="PDFLoadError()" onclick="PDFContainerTouched()">object can't be rendered</iframe>
-					<table id="infoLine">
-						<tr>
-							<td id="Date" style="border-style: none; padding-right: 30px" data-intro="Year of death." data-position="top">Date</td>
-							<td id="FileName" style="border-style: none;" data-intro="Currently the name of the file being displayed." data-position="top">File Name</td>
-						</tr>
-					</table>
-    			</div>
-			</div>
+					<iframe name="memFile" id="pdfFile" src="blank.pdf" style="height:99%; width:80%;" title="Memorial Information" onload="FinishPDFLoad()" onerror="PDFLoadError()" onclick="PDFContainerTouched()">object can't be rendered</iframe>
+				</div>
+			</div>	
+		</div>
+		<div class="box footer" id="footerID">
+			<table id="infoLine">
+				<tr>
+					<td id="Date" style="border-style: none; padding-right: 30px" data-intro="Year of death." data-position="top">Date</td>
+					<td id="FileName" style="border-style: none;" data-intro="Currently the name of the file being displayed." data-position="top">File Name</td>
+				</tr>
+			</table>
   		</div>
 	</div>
 </body>

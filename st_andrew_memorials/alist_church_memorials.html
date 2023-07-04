@@ -25,15 +25,16 @@
 <body onload="FinishLoad ()">
 	<div class="wrapper" id="wrapperID">
 		<div class="box controlSection" id="controlSectionID">
+			<div class="pdfMessage2" id="pdfMessage2ID"></div>
 			<table id="controlTableID">
 				<tr>
 					<td style="border-style: none; padding-left: 25px">
-						<div class="listButtonBox" data-intro="Select to hide or show the list of names." data-position="right">
+						<div class="listButtonBox" id="listButtonBoxID" data-intro="Select to hide or show the list of names." data-position="right">
 							<button class= "listButton" id="list" onclick="ChangeList();">Hide List</button>
 						</div>
 					</td>
 					<td style="border-style: none; padding-top: 0px">
-						<div class="navigationButtonsBox" data-intro="Use these buttons to step through the names in the list one at a time. In order left to right: go to the top of the list, go to the previous name, go to the next name, go to the bottom of the list. One can also use the arrow keys: up arrow goes to the top of the list, left arrow to the previous name, right arrow to the next name, and down arrow to the last in the list." data-position="right">
+						<div class="navigationButtonsBox" id="navigationButtonsBoxID" data-intro="Use these buttons to step through the names in the list one at a time. In order left to right: go to the top of the list, go to the previous name, go to the next name, go to the bottom of the list. One can also use the arrow keys: up arrow goes to the top of the list, left arrow to the previous name, right arrow to the next name, and down arrow to the last in the list." data-position="right">
 							<A HREF="JavaScript:ClickNext(FirstSlide, 1);" onMouseOver="MouseOver(1); return true;" onMouseDown="MouseDown(1);"><img  id="gif0" src="first.gif" ALT="First" WIDTH=32 HEIGHT=32 BORDER=0 ALIGN=top></A>
 							<A HREF="JavaScript:ClickNext(PreviousSlide, 2);" onMouseOver="MouseOver(2); return true;" onMouseDown="MouseDown(2);"><img  id="gif1" src="prev.gif" ALT="Previous" WIDTH=32 HEIGHT=32 BORDER=0 ALIGN=top style="padding-left: 3px"></A>
 							<A HREF="JavaScript:ClickNext(NextSlide, 3);" onMouseOver="MouseOver(3); return true;" onMouseDown="MouseDown(3);" ><img id="gif2" src="next.gif" ALT="Next" WIDTH=32 HEIGHT=32 BORDER=0 ALIGN=top style="padding-left: 3px"></A>

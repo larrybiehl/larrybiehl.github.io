@@ -67,33 +67,37 @@
     width: 99.7%;
   	}
   
-.listButton {
+	.listButton {
 		height: 25px;
    	font-size: 95%;
-}
+	}
 
-.listButtonBox {
+	.listButtonBox {
 		width: 150px;
-}
+	}
 
-.navigationButtonsBox {
+	.navigationButtonsBox {
 		width: 200px;
-}
+	}
 
-.listViewCell p {
-  margin-left: 0.3em ;
-  margin-top: 0.75em ;
-  margin-bottom: 0.75em ;
-}
+	.hide {
+    	display: none;
+	}
 
-#pdfFile {
-border-top-width: 1px;
-border-right-width: 1px;
-border-bottom-width: 1px;
-border-left-width: 1px;
-border-color: #444; 
+	.listViewCell p {
+  		margin-left: 0.3em ;
+  		margin-top: 0.75em ;
+  		margin-bottom: 0.75em ;
+	}
 
-}
+	#pdfFile {
+		border-top-width: 1px;
+		border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-color: #444; 
+
+	}
 
 #Date {
 border-style: none; 

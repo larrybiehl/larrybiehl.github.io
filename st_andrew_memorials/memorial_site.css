@@ -23,7 +23,7 @@
     background-color: #fff;
     color: #000;
     border-radius: 1px;
-    padding: 3px;
+    padding: 1px;
     font-size: 100%;
 
   }
@@ -104,6 +104,10 @@ padding-right: 30px;
 
 #infoLine td {
 text-align: middle;
+}
+
+#pdfMessage{
+padding-left: 3px
 }
   
 .showDropDownForm {

@@ -17,7 +17,7 @@
 	
 	LoadMemorialInformation ();
 
-	SetImageVariables(FirstSlide);
+	SetMemorialFileVariables(FirstSlide);
 
 	</script>
 </head>
@@ -28,7 +28,7 @@
 			<table id="controlTableID">
 				<tr>
 					<td class="pdfMessage2">
-						<div id="pdfMessage2ID" data-intro="Browsers for mobile phones and tablets do not allow one to display multiple pdf pages within a browser window. Tap the name in the list below to see the entire file to be displayed in a different window. Select the browser left arrow button to go back to the list." data-position="bottom">
+						<div id="pdfMessage2ID" data-intro="Browsers for mobile phones and tablets do not allow display multiple pdf pages to be imbedded in a browser window. Tap the name in the list below to see all pages displayed in a different window. Select the browser back (left arrow) button to go back to the list." data-position="bottom">
 						<span>Tap name below for memorial information.</span>
 						</div>
 					</td>
@@ -69,7 +69,7 @@
   		<div class="box mainSection" id="mainSectionID">
     		<div class="box listViewCell" id="listView" data-intro="Select name in the list to show memorial information for that person to the right." data-position="right">List</div>
     		<div class="box g" id="pdfFileContainerID">
-    			<div id="pdfMessage" data-intro="Browsers for mobile phones and tablets do not allow one to display multiple pdf pages within a browser window. Only the first page is shown. Tap on this line to cause the entire file to be displayed in a different window. Select the browser left arrow key to go back to the list." data-position="bottom" onclick="PDFContainerTouched()"></div>
+    			<div id="pdfMessage" data-intro="Browsers for mobile phones and tablets do not allow multiple pdf pages to be imbedded in a browser window. Only the first page is shown. Tap on this line to see all pages displayed in a different window. Select the browser back (left arrow) button to go back to the list." data-position="bottom" onclick="PDFContainerTouched()"></div>
     			<div id="container">
 					<iframe id="pdfFile" src="blank.pdf" style="height:99%; width:98%;" title="Memorial Information" onload="FinishPDFLoad()" onerror="PDFLoadError()" onclick="PDFContainerTouched()">object can't be rendered</iframe>
 				</div>

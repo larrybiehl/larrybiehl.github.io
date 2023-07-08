@@ -111,7 +111,12 @@ text-align: middle;
 }
 
 #pdfMessage{
-padding-left: 3px
+padding-left: 3px;
+}
+
+#pdfMessage2{
+padding-left: 3px;
+
 }
   
 .showDropDownForm {
@@ -135,8 +140,8 @@ padding-left: 3px
 #show_me {
   padding-left: 10px;
   padding-right:20px;
-  padding-top:3px;
-  padding-bottom: 8px;
+  padding-top:6px;
+  padding-bottom: 4px;
   cursor: pointer;
   color:#4A98EC;
   float:right;

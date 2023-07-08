@@ -25,9 +25,13 @@
 <body onload="FinishLoad ()">
 	<div class="wrapper" id="wrapperID">
 		<div class="box controlSection" id="controlSectionID">
-			<div class="pdfMessage2" id="pdfMessage2ID"></div>
 			<table id="controlTableID">
 				<tr>
+					<td class="pdfMessage2">
+						<div id="pdfMessage2ID" data-intro="Browsers for mobile phones and tablets do not allow one to display multiple pdf pages within a browser window. Tap the name in the list below to see the entire file to be displayed in a different window. Select the browser left arrow button to go back to the list." data-position="bottom">
+						<span>Tap name below for memorial information.</span>
+						</div>
+					</td>
 					<td style="border-style: none; padding-left: 25px">
 						<div class="listButtonBox" id="listButtonBoxID" data-intro="Select to hide or show the list of names." data-position="right">
 							<button class= "listButton" id="list" onclick="ChangeList();">Hide List</button>
@@ -43,7 +47,7 @@
 					</td>
 					<td style="border-style: none">
 							<center>
-								<form class="showDropDownForm" data-intro="Allows viewer to control a 'slide' show of the file for each person in the list with a choice of delays before going to the next person. The show will loop back to the first person after the last person in the list is shown." data-position="right" ACTION="" METHOD=POST name=pdfShowForm>
+								<form class="showDropDownForm" id="showDropDownID" data-intro="Allows viewer to control a 'slide' show of the file for each person in the list with a choice of delays before going to the next person. The show will loop back to the first person after the last person in the list is shown." data-position="right" ACTION="" METHOD=POST name=pdfShowForm>
 									<select class="showDropDown" id="show" onChange="SlideShow(1);">
 										<OPTION VALUE="-1" SELECTED>No Slide Show
 										<OPTION VALUE=3>Slide Show - 3 s
@@ -64,8 +68,8 @@
 		</div>
   		<div class="box mainSection" id="mainSectionID">
     		<div class="box listViewCell" id="listView" data-intro="Select name in the list to show memorial information for that person to the right." data-position="right">List</div>
-    		<div class="box g" id="pdfFileContainer">
-    			<div id="pdfMessage" data-intro="Browsers for mobile phones and tablets do not allow one to display multiple pdf pages within a browser window. Only the first page is shown. Tap on this line to cause the entire file to be displayed in a different window. Select the left arrow key in the upper left of the browser window to go back to the list." data-position="bottom" onclick="PDFContainerTouched()"></div>
+    		<div class="box g" id="pdfFileContainerID">
+    			<div id="pdfMessage" data-intro="Browsers for mobile phones and tablets do not allow one to display multiple pdf pages within a browser window. Only the first page is shown. Tap on this line to cause the entire file to be displayed in a different window. Select the browser left arrow key to go back to the list." data-position="bottom" onclick="PDFContainerTouched()"></div>
     			<div id="container">
 					<iframe id="pdfFile" src="blank.pdf" style="height:99%; width:98%;" title="Memorial Information" onload="FinishPDFLoad()" onerror="PDFLoadError()" onclick="PDFContainerTouched()">object can't be rendered</iframe>
 				</div>

@@ -94,66 +94,64 @@
 	#pdfFile {
 		border-top-width: 1px;
 		border-right-width: 1px;
-	border-bottom-width: 1px;
-	border-left-width: 1px;
-	border-color: #444; 
-
+		border-bottom-width: 1px;
+		border-left-width: 1px;
+		border-color: #444; 
 	}
 
-#Date {
-border-style: none; 
-padding-left: 5px; 
-padding-right: 30px;
+	#Date {
+		border-style: none; 
+		padding-left: 5px; 
+		padding-right: 30px;
+	}
 
-}
+	#infoLine td {
+		text-align: middle;
+	}
 
-#infoLine td {
-text-align: middle;
-}
+	#pdfMessage {
+		padding-left: 5px;
+	}
 
-#pdfMessage{
-padding-left: 5px;
-}
+	#pdfMessage2ID {
+		padding-left: 3px;
 
-#pdfMessage2ID{
-padding-left: 3px;
-
-}
+	}
   
-.showDropDownForm {
+	.showDropDownForm {
 		size: 27px;
-}
+	}
   
-.showDropDown {
+	.showDropDown {
 		height: 25px;
-   	font-size: 95%;
-}
-
-
-.hide .listViewCell {
-	display: none;
-}
-
-.hide .g {
-	grid-column: 1 / 3;
+		font-size: 95%;
 	}
 
-#show_me {
-  padding-left: 10px;
-  padding-right:20px;
-  padding-top:6px;
-  padding-bottom: 4px;
-  cursor: pointer;
-  color:#4A98EC;
-  float:right;
-  display: inline;
-}
 
-.introjs-helperLayer {
-  background-color: transparent !important;
-}
+	.hide .listViewCell {
+		display: none;
+	}
 
-.introjs-overlay {
-  opacity: 0 !important;
-}
+	.hide .g {
+		grid-column: 1 / 3;
+		}
+
+	#show_me {
+	  padding-left: 10px;
+	  padding-right:20px;
+	  padding-top:6px;
+	  padding-bottom: 4px;
+	  cursor: pointer;
+	  color:#4A98EC;
+	  float:right;
+	  display: inline;
+	}
+
+	.introjs-helperLayer {
+	  background-color: transparent !important;
+	}
+
+	.introjs-overlay {
+	  opacity: 0 !important;
+	}
 

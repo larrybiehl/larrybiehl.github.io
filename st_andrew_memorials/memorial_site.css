@@ -74,11 +74,11 @@
 	}
 
 	.listButtonBox {
-		width: 150px;
+		width: 130px;
 	}
 
 	.navigationButtonsBox {
-		width: 200px;
+		width: 170px;
 	}
 
 	.hide {
@@ -138,7 +138,7 @@
 		}
 
 	#st_andrew {
-	  padding-right:20px;
+	  padding-right:10px;
 	  padding-top:6px;
 	  cursor: pointer;
 	  float:right;
@@ -147,21 +147,11 @@
 	
 	#titleID {
    	font-size: 150%;
-		text-align: middle;
-   	color: red;
-	}
-	
-	.title {
-   	color: red;
-		text-align: middle;
-	}
-	
-	.td .title {
-		text-align: center"
+   	color: #136799;
 	}
 
 	#show_me {
-	  padding-left: 10px;
+	  padding-left: 5px;
 	  padding-right:20px;
 	  padding-top:6px;
 	  padding-bottom: 4px;

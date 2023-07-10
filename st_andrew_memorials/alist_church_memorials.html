@@ -25,6 +25,13 @@
 <body onload="FinishLoad ()">
 	<div class="wrapper" id="wrapperID">
 		<div class="box controlSection" id="controlSectionID">
+			<table id="titleTableID" border="0" width="100%">
+				<tr>
+					<td class="title" id="titleID" style="text-align: center">
+						St. Andrew Memorial Book
+					</td>
+				</tr>
+			</table>
 			<table id="controlTableID">
 				<tr>
 					<td class="pdfMessage2">
@@ -38,7 +45,7 @@
 						</div>
 					</td>
 					<td style="border-style: none; padding-top: 0px">
-						<div class="navigationButtonsBox" id="navigationButtonsBoxID" data-intro-disabled="Use these buttons to step through the names in the list one at a time. In order left to right: go to the top of the list, go to the previous name, go to the next name, go to the bottom of the list. One can also use the arrow keys: up arrow goes to the top of the list, left arrow to the previous name, right arrow to the next name, and down arrow to the last in the list." data-position="right">
+						<div class="navigationButtonsBox" id="navigationButtonsBoxID" data-intro-disabled="Use these buttons to step through the names in the list one at a time. In order left to right: go to the top of the list, go to the previous name, go to the next name, go to the bottom of the list. One can also use the arrow keys: up arrow goes to the top of the list, left arrow to the previous name, right arrow to the next name, and down arrow to the last in the list." data-position="bottom">
 							<A HREF="JavaScript:ClickNext(FirstSlide, 1);" onMouseOver="MouseOver(1); return true;" onMouseDown="MouseDown(1);"><img  id="gif0" src="first.gif" ALT="First" WIDTH=32 HEIGHT=32 BORDER=0 ALIGN=top></A>
 							<A HREF="JavaScript:ClickNext(PreviousSlide, 2);" onMouseOver="MouseOver(2); return true;" onMouseDown="MouseDown(2);"><img  id="gif1" src="prev.gif" ALT="Previous" WIDTH=32 HEIGHT=32 BORDER=0 ALIGN=top style="padding-left: 3px"></A>
 							<A HREF="JavaScript:ClickNext(NextSlide, 3);" onMouseOver="MouseOver(3); return true;" onMouseDown="MouseDown(3);" ><img id="gif2" src="next.gif" ALT="Next" WIDTH=32 HEIGHT=32 BORDER=0 ALIGN=top style="padding-left: 3px"></A>
@@ -47,7 +54,7 @@
 					</td>
 					<td style="border-style: none">
 							<center>
-								<form class="showDropDownForm" id="showDropDownID" data-intro-disabled="Allows viewer to control a 'slide' show of the file for each person in the list with a choice of delays before going to the next person. The show will loop back to the first person after the last person in the list is shown." data-position="right" ACTION="" METHOD=POST name=pdfShowForm>
+								<form class="showDropDownForm" id="showDropDownID" data-intro-disabled="Allows viewer to control a 'slide' show of the file for each person in the list with a choice of delays before going to the next person. The show will loop back to the first person after the last person in the list is shown." data-position="bottom" ACTION="" METHOD=POST name=pdfShowForm>
 									<select class="showDropDown" id="show" onChange="SlideShow(1);">
 										<OPTION VALUE="-1" SELECTED>No Slide Show
 										<OPTION VALUE=3>Slide Show - 3 s
@@ -62,7 +69,8 @@
    						</center>
 						</div>
 					</td>	
-					<span id="show_me" data-intro-disabled="<b>St. Andrew Memorial Book</b></br></br>This tour will describe the choices for this display of the St. Andrew Memorial information. In addition to the buttons below, you may use the left and right arrow keys for navigation and 'esc' to exit the tour. This site represents memorial information created for St. Andrew members and their families for more than the last 40 years." data-position="left" data-step="1" title="Select for help information"><img src="1396823_circle_info_information_letter_icon_24.png"></span>
+					<span id="st_andrew" data-intro-disabled="Button to go to St. Andrew's web site."> <a href="https://andrew-umc.org"><img src="st_andrew_24x24.png"></a></span>
+					<span id="show_me" data-intro-disabled="<b>St. Andrew Memorial Book</b></br></br>This tour will describe the choices for this display of the St. Andrew Memorial information. In addition to the buttons below, you may use the left and right arrow keys for navigation and 'esc' to exit the tour. This site represents memorial information created for St. Andrew members and their families for more than the last 40 years." data-position="bottom" data-step="1" title="Select for help information"><img src="1396823_circle_info_information_letter_icon_24.png"></span>
 				</tr>
 			</table>
 		</div>

@@ -17,6 +17,7 @@
     grid-auto-flow: column dense;
     background-color: #fff;
     color: #444;
+    font-family: roboto, sans-serif;
   }
 
   .box {
@@ -162,10 +163,13 @@
 	}
 
 	.introjs-helperLayer {
-	  background-color: transparent !important;
+		background-color: transparent !important;
 	}
 
 	.introjs-overlay {
 	  opacity: 0 !important;
 	}
 
+	.introjs-tooltipReferenceLayer{
+		font-family: roboto, sans-serif;
+	}
